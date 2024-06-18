@@ -26,16 +26,25 @@ importers:
 
   packages/core:
     dependencies:
+      aws-lambda:
+        specifier: ^1.0.7
+        version: 1.0.7
+      aws-sdk:
+        specifier: ^2.1643.0
+        version: 2.1643.0
       zod:
         specifier: ^3.23.8
         version: 3.23.8
     devDependencies:
+      '@types/aws-lambda':
+        specifier: ^8.10.138
+        version: 8.10.138
       '@types/node':
         specifier: ^20.14.2
         version: 20.14.2
       sst:
         specifier: ^2.43.1
-        version: 2.43.1(@aws-sdk/client-sso-oidc@3.598.0(aws-crt@1.21.3))(aws-crt@1.21.3)
+        version: 2.43.1(@aws-sdk/client-sso-oidc@3.598.0(@aws-sdk/client-sts@3.598.0(aws-crt@1.21.3))(aws-crt@1.21.3))(aws-crt@1.21.3)
       vitest:
         specifier: ^1.6.0
         version: 1.6.0(@types/node@20.14.2)
@@ -63,7 +72,7 @@ importers:
         version: 9.0.8
       sst:
         specifier: ^2.43.1
-        version: 2.43.1(@aws-sdk/client-sso-oidc@3.598.0(@aws-sdk/client-sts@3.598.0(aws-crt@1.21.3))(aws-crt@1.21.3))(aws-crt@1.21.3)
+        version: 2.43.1(@aws-sdk/client-sso-oidc@3.598.0(aws-crt@1.21.3))(aws-crt@1.21.3)
       vitest:
         specifier: ^1.6.0
         version: 1.6.0(@types/node@20.14.2)
